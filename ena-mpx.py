@@ -104,7 +104,7 @@ os.system("cd packages/monkeypox ; nextstrain build --docker --cpus 1 . --config
 #************************************** Visualize results ....
 
 print('\n\n> Visualize results ... [ '+str(datetime.now())+" ]") 
-os.system("cd packages/monkeypox ; nextstrain view auspice/") 
+os.system("cd packages/monkeypox ; nextstrain view --port 8080 auspice/") 
 
 webbrowser.open_new_tab("http://127.0.0.1:4000/monkeypox/mpxv")
 
